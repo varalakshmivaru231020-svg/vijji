@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s https://vijaylakshmi.bestprime.live/checkout)",
+      "Bash(curl -s \"https://vijaylakshmi.bestprime.live/_next/static/chunks/app/\\(marketing\\)/checkout/page-016b7f9c702908b2.js\")",
+      "Bash(curl -s \"https://vijaylakshmi.bestprime.live/_next/static/chunks/app/\\(marketing\\)/checkout/page-016b7f9c702908b2.js\" > /tmp/live_chunk.js && wc -c /tmp/live_chunk.js && echo \"---\" && grep -oE 'Pay via [A-Za-z]+' /tmp/live_chunk.js | sort -u && echo \"---\" && grep -oE 'value:\"[^\"]+\",label:\"[^\"]+\"' /tmp/live_chunk.js | sort -u)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/api/payment-config)",
+      "Bash(curl -s -o /dev/null -w \"API: HTTP %{http_code}\\\\n\" http://localhost:3000/api/payment-config)",
+      "Bash(curl -s http://localhost:3000/api/payment-config)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code} \\(loaded in %{time_total}s\\)\\\\n\" http://localhost:3000/checkout)",
+      "Bash(curl -s http://localhost:3000/checkout)",
+      "Bash(curl -s http://localhost:3000/_next/static/chunks/app/\\\\\\(marketing\\\\\\)/checkout/page.js)",
+      "Bash(curl -s \"https://vijaylakshmi.bestprime.live/checkout\")",
+      "Bash(curl -s https://vijaylakshmi.bestprime.live/api/payment-config)",
+      "Bash(curl -s -X POST http://localhost:3000/api/web/checkout/razorpay -H \"Content-Type: application/json\" -d '{\"address\":{\"fullName\":\"Test\",\"phone\":\"9999999999\"},\"items\":[{\"productId\":\"test\",\"variantId\":\"test\",\"productName\":\"Test\",\"variantColor\":\"Red\",\"quantity\":1,\"salePrice\":100}]}')",
+      "Bash(node -e \"require\\('./routes/admin.js'\\); console.log\\('admin.js loaded successfully'\\);\")",
+      "Bash(node test_parse.js)",
+      "Bash(rm test_parse.js)",
+      "Bash(awk 'NR<=3266 && /@media/' \"c:/Users/varalakshmi/Desktop/Surabharathi Temple/temple_frontend/src/app/\\(website\\)/website.css\")",
+      "Bash(curl -s -o /tmp/events.json -w \"HTTP %{http_code} | time %{time_total}s | size %{size_download}b\\\\n\" https://srisurabharathi.com/api/public/events)",
+      "Bash(curl -s https://srisurabharathi.com/events -o /tmp/events_page.html)",
+      "PowerShell(Invoke-RestMethod -Uri \"https://vijaylakshmi.bestprime.live/api/auth/otp/send\" -Method POST -ContentType \"application/json\" -Body '{\"phone\": \"9832399399\"}')",
+      "PowerShell(try { $r = Invoke-RestMethod -Uri \"https://vijaylakshmi.bestprime.live/api/auth/otp/send\" -Method POST -ContentType \"application/json\" -Body '{\"phone\": \"9832399399\"}'; $r | ConvertTo-Json } catch { $_.Exception.Response.StatusCode; $_.Exception.Message })",
+      "Bash(robocopy \"c:\\\\Users\\\\varalakshmi\\\\Desktop\\\\Vijaylakshmi sarees\\\\vijaylakshmi_ecom\\\\web\" \"c:\\\\Users\\\\varalakshmi\\\\Desktop\\\\Bhagavathy duplicate\" /E /XD node_modules .next .git /XF \"*.log\" /NFL /NDL /NJH /NJS)",
+      "Bash(robocopy \"c:\\\\Users\\\\varalakshmi\\\\Desktop\\\\Vijaylakshmi sarees\\\\vijaylakshmi_ecom\\\\web\" \"c:\\\\Users\\\\varalakshmi\\\\Desktop\\\\Bhagavathy duplicate\" /S /XD \"node_modules\" \".next\" \".git\" /NFL /NDL /NJH /NJS)",
+      "Bash(robocopy \"c:\\\\Users\\\\varalakshmi\\\\Desktop\\\\Vijaylakshmi sarees\\\\vijaylakshmi_ecom\\\\web\" \"c:\\\\Users\\\\varalakshmi\\\\Desktop\\\\Bhagavathy duplicate\" /E /XD \"node_modules\" \".next\" \".git\" /NFL /NDL /NJH /NJS)"
+    ],
+    "additionalDirectories": [
+      "\\tmp",
+      "C:\\Users\\varalakshmi\\Desktop\\Bhagavathy duplicate"
+    ]
+  }
+}
